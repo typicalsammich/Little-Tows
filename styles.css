@@ -32,3 +32,28 @@ footer{background:#effaff;padding:55px 0 95px}.foot{display:grid;grid-template-c
  .hero h1{font-size:58px}
  .hero-copy{max-width:100%}
 }
+
+/* V4 hero/mobile refinements */
+.hero{
+  background:
+    linear-gradient(90deg,rgba(244,252,255,.84) 0%,rgba(244,252,255,.58) 36%,rgba(244,252,255,.03) 64%),
+    url("assets/hero.png") 64% center/cover no-repeat;
+}
+@media(max-width:800px){
+  header{margin:0!important;top:0!important}
+  .hero{
+    margin-top:0!important;
+    min-height:520px!important;
+    background:
+      linear-gradient(0deg,rgba(244,252,255,.88) 0%,rgba(244,252,255,.44) 45%,rgba(244,252,255,.01) 78%),
+      url("assets/hero.png") 61% center/cover no-repeat!important;
+  }
+  .hero .wrap{
+    min-height:520px!important;
+    padding-top:0!important;
+    padding-bottom:38px!important;
+  }
+  .hero-copy{padding-top:0!important}
+  .hero .kicker{margin-bottom:4px}
+  .hero h1{margin-top:8px}
+}
