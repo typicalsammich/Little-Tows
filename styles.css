@@ -57,3 +57,11 @@ footer{background:#effaff;padding:55px 0 95px}.foot{display:grid;grid-template-c
   .hero .kicker{margin-bottom:4px}
   .hero h1{margin-top:8px}
 }
+
+.logo-link{display:flex;align-items:center}
+.site-logo{width:190px;height:64px;object-fit:contain;object-position:left center}
+.footer-logo{width:245px;height:auto;max-height:105px;object-fit:contain;object-position:left center}
+@media(max-width:800px){
+ .site-logo{width:145px;height:54px}
+ .logo-link{height:58px}
+}
