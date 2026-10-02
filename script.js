@@ -1,9 +1,1 @@
-const b=document.querySelector('.hamb'),l=document.querySelector('.links');if(b)b.onclick=()=>l.classList.toggle('open');const c=document.querySelector('.mobile-call');addEventListener('scroll',()=>c&&c.classList.toggle('show',scrollY>260));
-if(matchMedia('(pointer:fine)').matches){
- const cur=document.createElement('div');cur.className='site-cursor';document.body.appendChild(cur);
- addEventListener('mousemove',e=>{cur.style.left=e.clientX+'px';cur.style.top=e.clientY+'px'});
- document.querySelectorAll('a,button').forEach(el=>{
-   el.addEventListener('mouseenter',()=>cur.classList.add('hot'));
-   el.addEventListener('mouseleave',()=>cur.classList.remove('hot'));
- });
-}
+const h=document.querySelector('.hamb'),n=document.querySelector('nav');if(h)h.onclick=()=>n.classList.toggle('open');const mc=document.querySelector('.mobile-call');addEventListener('scroll',()=>mc&&mc.classList.toggle('show',scrollY>260));if(matchMedia('(pointer:fine)').matches){const c=document.createElement('div');c.className='cursor';document.body.appendChild(c);addEventListener('mousemove',e=>{c.style.left=e.clientX+'px';c.style.top=e.clientY+'px'});document.querySelectorAll('a,button').forEach(x=>{x.onmouseenter=()=>c.classList.add('hot');x.onmouseleave=()=>c.classList.remove('hot')})}
