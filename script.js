@@ -1,0 +1,1 @@
+const b=document.querySelector('.hamb'),l=document.querySelector('.links');if(b)b.onclick=()=>l.classList.toggle('open');const c=document.querySelector('.mobile-call');addEventListener('scroll',()=>c&&c.classList.toggle('show',scrollY>260));
